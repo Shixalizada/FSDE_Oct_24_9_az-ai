@@ -1,0 +1,262 @@
+window.EXPERIMENT_GROUPS = [
+  [
+    "1. Tək neyron",
+    [
+      [
+        "1.1",
+        "Gaussian",
+        "X1, X2",
+        "0",
+        "0.03",
+        "Tanh",
+        "200",
+        "Düz xətt"
+      ],
+      [
+        "1.2",
+        "Circle",
+        "X1, X2",
+        "0",
+        "0.03",
+        "Tanh",
+        "500",
+        "Düz xətt; dairəni ayıra bilmir"
+      ],
+      [
+        "1.3",
+        "Circle",
+        "X1, X2, X1², X2²",
+        "0",
+        "0.03",
+        "Tanh",
+        "500",
+        "Giriş fəzasında kvadratik sərhəd"
+      ]
+    ]
+  ],
+  [
+    "2. XOR",
+    [
+      [
+        "2.1",
+        "XOR",
+        "X1, X2",
+        "0",
+        "0.03",
+        "Tanh",
+        "500",
+        "Xətti"
+      ],
+      [
+        "2.2",
+        "XOR",
+        "X1, X2",
+        "1×1",
+        "0.03",
+        "Tanh",
+        "500",
+        "Məhdud qeyri-xətti"
+      ],
+      [
+        "2.3",
+        "XOR",
+        "X1, X2",
+        "1×2",
+        "0.03",
+        "Tanh",
+        "500",
+        "Qeyri-xətti, nəticə dəyişkən"
+      ],
+      [
+        "2.4",
+        "XOR",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "Tanh",
+        "500",
+        "Qeyri-xətti"
+      ]
+    ]
+  ],
+  [
+    "3. Activation",
+    [
+      [
+        "3.1",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "Linear",
+        "500",
+        "Xətti"
+      ],
+      [
+        "3.2",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "Sigmoid",
+        "500",
+        "Ölçülməlidir"
+      ],
+      [
+        "3.3",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "Tanh",
+        "500",
+        "Ölçülməlidir"
+      ],
+      [
+        "3.4",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "ReLU",
+        "500",
+        "Ölçülməlidir"
+      ]
+    ]
+  ],
+  [
+    "4. Spiral",
+    [
+      [
+        "4.1",
+        "Spiral",
+        "X1, X2",
+        "2×8×8",
+        "0.03",
+        "Tanh",
+        "<1000",
+        "Ölçülməlidir"
+      ],
+      [
+        "4.2",
+        "Spiral",
+        "X1, X2",
+        "3×6×6×6",
+        "0.03",
+        "Tanh",
+        "<1000",
+        "Ölçülməlidir"
+      ],
+      [
+        "4.3",
+        "Spiral",
+        "X1, X2",
+        "2×6×6",
+        "0.03",
+        "Tanh",
+        "<1000",
+        "Ölçülməlidir"
+      ]
+    ]
+  ],
+  [
+    "5. Learning rate",
+    [
+      [
+        "5.1",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.0001",
+        "Tanh",
+        "100, 500",
+        "Ölçülməlidir"
+      ],
+      [
+        "5.2",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.003",
+        "Tanh",
+        "100, 500",
+        "Ölçülməlidir"
+      ],
+      [
+        "5.3",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.03",
+        "Tanh",
+        "100, 500",
+        "Ölçülməlidir"
+      ],
+      [
+        "5.4",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "0.3",
+        "Tanh",
+        "100, 500",
+        "Ölçülməlidir"
+      ],
+      [
+        "5.5",
+        "Circle",
+        "X1, X2",
+        "1×4",
+        "3",
+        "Tanh",
+        "100, 500",
+        "Ölçülməlidir"
+      ]
+    ]
+  ],
+  [
+    "6. Overfitting",
+    [
+      [
+        "6.1",
+        "Gaussian; noise=50",
+        "X1, X2",
+        "6×8",
+        "0.03",
+        "ReLU",
+        "1000",
+        "Train=10%, regularization=None"
+      ],
+      [
+        "6.2",
+        "Gaussian; noise=50",
+        "X1, X2",
+        "6×8",
+        "0.03",
+        "ReLU",
+        "1000",
+        "Train=10%, L2=0.01"
+      ],
+      [
+        "6.3",
+        "Gaussian; noise=50",
+        "X1, X2",
+        "1×2",
+        "0.03",
+        "ReLU",
+        "1000",
+        "Train=10%, regularization=None"
+      ],
+      [
+        "6.4",
+        "Gaussian; noise=50",
+        "X1, X2",
+        "6×8",
+        "0.03",
+        "ReLU",
+        "1000",
+        "Train=80%, regularization=None"
+      ]
+    ]
+  ]
+];
